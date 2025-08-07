@@ -1,0 +1,61 @@
+.form-container{
+    margin: 4rem 6rem ;
+    color: #2a2a2a;
+}
+
+.form-container form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.form-container input{
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius:  .3rem;
+    border: 1px solid #2a2a2a;
+}
+
+.form-container  textarea{
+    padding:  1rem;
+    margin-bottom: 2rem;
+    border-radius:  0.3rem;
+    border: 1px solid #2a2a2a;
+}
+
+.form-container button{
+    display: inline;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .form-container {
+    color: #fff;  /* Adjust text color for dark mode */
+}
+
+body.dark-mode .form-container input,
+body.dark-mode .form-container textarea {
+    background-color: #333;  /* Set dark background for input/textarea */
+    color: #fff;  /* Set text color to white for inputs/textarea */
+    border: 1px solid #555;  /* Darker border for inputs/textarea */
+}
+
+body.dark-mode .form-container button {
+    background-color: #555;  /* Dark button background */
+    color: #fff;  /* White text for button */
+    border: none;  /* Remove border */
+}
+
+@media screen and (max-width:850px){
+    .form-container {
+        margin: 4rem 2rem;
+    }
+
+    .form-container form{
+       padding-top: 2rem;
+       width: 90%;
+    }
+}
